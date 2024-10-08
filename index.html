@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link id="stylesheetReference" rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Quiz</title>
+</head>
+
+<body>
+  <img id="backgroundImage" class="bg">
+  <div id="topbar"></div>
+  <div id="disclaimer"></div>
+  <div id="players">
+  </div>
+  <div id="ready">
+    <div id="readyTitle">Quiz Time!</div>
+    <div id="readyContent">
+      <div id="howMany" class="sectionTitle">How Many Questions?</div>
+      <div class="selector">
+        <div id="q5" class="option optionSelected">5</div>
+        <div id="q10" class="option">10</div>
+        <div id="q20" class="option">20</div>
+      </div>
+      <div id="timedQuestions" class="sectionTitle">Timed Questions?</div>
+      <div class="selector">
+        <div id="timerYes" class="option optionSelected">Yes</div>
+        <div id="timerNo" class="option">No</div>
+      </div>
+      <div id="startGame" class="cta">Lets Play!</div>
+    </div>
+    <div id="languageSelect">
+      <div id="lang-en1" class="language">🇬🇧</div>
+      <div id="lang-en2" class="language">🇺🇸</div>
+      <div id="lang-ru" class="language">🇷🇺</div>
+      <div id="lang-es" class="language">🇪🇸</div>
+      <div id="lang-pt1" class="language">🇵🇹</div>
+      <div id="lang-pt2" class="language">🇧🇷</div>
+    </div>
+  </div>
+  <div id="question">
+    <div id="questionHeading">
+      <div id="questionNumber"></div>
+      <div id="questionText"></div>
+    </div>
+    <div id="questionContent">
+      <div id="imageHolder">
+        <img id="questionImage" src="">
+      </div>
+      <div id="timebar"></div>
+      <div id="answers">
+        <div id="answer1" class="answer">
+          <div id="answer1-slots" class="slots">
+          </div>
+          <span id="answer1-value"></span>
+        </div>
+        <div id="answer2" class="answer">
+          <div id="answer2-slots" class="slots">
+          </div>
+          <span id="answer2-value"></span>
+        </div>
+        <div id="answer3" class="answer">
+          <div id="answer3-slots" class="slots">
+          </div>
+          <span id="answer3-value"></span>
+        </div>
+        <div id="answer4" class="answer">
+          <div id="answer4-slots" class="slots">
+          </div>
+          <span id="answer4-value"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/logic.ts"></script>
+  <script type="module" src="/src/client.ts"></script>
+</body>
+
+</html>
